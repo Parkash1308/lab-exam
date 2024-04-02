@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <img src="./one.svg" alt="image1/" />
+    <img src="./one.svg" alt="image1/" class  ="big-image"  />
     <!-- Your html Code -->
+    <div class="container" >
+      <button class="prev" onclick="getPrevImage"><</button>
+    
+      <img src="one.svg" alt=""  id="currentImg" />
+      <div class="images">
+        <img src="one.svg" alt="" class="images">
+        <img src="two.svg" alt="" class="images">
+        <img src="three.svg" alt="" class="images">
+        <img src="four.svg" alt="" class="images">
+      </div>
+      
+     
+      <button class="next" onclick="getNextImage()">></button>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
