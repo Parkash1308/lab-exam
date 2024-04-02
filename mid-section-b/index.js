@@ -2,10 +2,17 @@ const img = document.getElementsByClassName("container");
 var index = 0;
 
 function getNextImage() {
-    if ()
-        document.getElementById("currentImg").src = img[index].src;
+    if (index < 4)
+        document.getElementById("currentImg").src = img[index++].src;
+    else
+        alert("no more images")
+
+
 }
 
 function getPrevImage() {
-    document.getElementById("currentImg").src = img[0].src;
+    if (index < 4 && index >= 0)
+        document.getElementById("currentImg").src = img[index--].src;
+    else
+        alert("no more images")
 }
